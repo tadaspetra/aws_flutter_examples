@@ -1,0 +1,59 @@
+{
+    "identityPoolName": "awscrud2a6e7fd5_identitypool_2a6e7fd5",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "awscru2a6e7fd5",
+    "userPoolName": "awscrud2a6e7fd5_userpool_2a6e7fd5",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "userpoolClientLambdaRole": "awscru2a6e7fd5_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "2a6e7fd5",
+    "resourceName": "awscrud2a6e7fd5",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "defaultSocial",
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "dependsOn": [],
+    "hostedUI": true,
+    "hostedUIDomainName": "firstcrud68740884-68740884",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"awscrud://\"],\"LogoutURLs\":[\"awscrud://\"]}",
+    "authProviders": []
+}
