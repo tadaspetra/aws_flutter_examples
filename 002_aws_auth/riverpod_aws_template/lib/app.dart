@@ -24,16 +24,8 @@ class _AppState extends State<App> {
   }
 
   Future<void> _configureAmplify() async {
-    // Add the following line to add DataStore plugin to your app
-
-    try {
-      await Amplify.addPlugins([
-        AmplifyAuthCognito(),
-      ]);
-      await Amplify.configure(amplifyconfig);
-    } on AmplifyAlreadyConfiguredException catch (e) {
-      print("Tried to reconfigure Amplify; this can occur when your app restarts on Android.");
-    }
+    await Amplify.addPlugins([AmplifyAuthCognito()]);
+    await Amplify.configure(amplifyconfig);
     setState(() {
       _amplifyConfigured = true;
     });

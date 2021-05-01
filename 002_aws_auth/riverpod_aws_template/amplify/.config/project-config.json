@@ -2,7 +2,7 @@
   "providers": [
     "awscloudformation"
   ],
-  "projectName": "awsexample",
+  "projectName": "flutterapp",
   "version": "3.1",
   "frontend": "flutter",
   "flutter": {

@@ -26,8 +26,6 @@ dependencies:
   amplify_auth_cognito: <1.0.0
   amplify_flutter: <1.0.0
   flutter_riverpod: ^0.13.1
-  lint: ^1.5.2
-  pedantic: ^1.11.0
 
 dev_dependencies:
   flutter_test:
